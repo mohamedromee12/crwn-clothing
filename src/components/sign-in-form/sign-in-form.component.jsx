@@ -50,7 +50,7 @@ const SignInForm = () => {
     } catch (error) {
       console.log(error.code);
       if (!(error.code !== "auth/user-not-found")) {
-        console.log('entered')
+        //console.log('entered')
         alert("The email not exist");
       } else if (!(error.code !== "auth/wrong-password")) {
         alert("The password is incorrect");
